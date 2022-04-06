@@ -57,6 +57,36 @@ yum install ncurses-devel
 ## Problem 3. 
 * Error Message:
 ```
+In Stratus IDE:
+              #################################################################
+              #                                                               #
+  ERROR 02366:# Error. See log file at /home/roy/design/simple_p2p/bdw_work/modules/dut/BASIC/logs/cyn_mux_estimate_config.log                                                  #
+  ERROR 02366.#   . Synthesis engine reports error: can not find channel      #
+  ERROR 02366.#   named "couldn't open socket: connection refused"            #
+              #                                                               #
+              #################################################################
+              #################################################################
+              #                                                               #
+  ERROR 02390:# Data path optimization failed for test_mux_1_2 (error in      #
+  ERROR 02390.#   internal part model).                                       #
+              #                                                               #
+              #################################################################
+              #################################################################
+              #                                                               #
+  FATAL 02367:# An error occured in the synthesis of muxes.                   #
+              #                                                               #
+              #################################################################
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:      FATAL 02367   1
+        01198:      ERROR 02366   1
+        01198:      ERROR 02390   1
+
+stratus_hls failed with 3 errors and 0 warnings.
+
+make[1]: *** [bdw_work/modules/dut/BASIC/dut_rtl.cc] Error 1
+make: *** [hlsc_dut_BASIC] Error 2
 ```
 * Solution:
 ```
