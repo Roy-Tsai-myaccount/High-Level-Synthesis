@@ -48,6 +48,7 @@ Since I sourced the license file of Verdi first, the corresponding verdi lib pat
         libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007f59e4382000)
         /lib64/ld-linux-x86-64.so.2 (0x00007f59e4da5000)
 ```
+* Reference: [执行过程中，找不到指定的符号，报错退出的解决办法](http://www.lujun.org.cn/?p=4681)
 
 ## Problem 3. 
 * Error Message:
