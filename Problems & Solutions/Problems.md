@@ -27,7 +27,7 @@ Starting Stratus DPOpt (Linux)
   Args: --dofile /usr/cad/cadence/STRATUS/STRATUS_19.12.100/share/stratus/tcl/bdw_cmd_shell.tcl --locallogfile /dev/null -x bdw_server_start
 /usr/cad/cadence/STRATUS/STRATUS_19.12.100/tools.lnx86/cellmath/sbin/Linux/cynth-dpopt: symbol lookup error: /usr/lib64/libncurses.so.5: undefined symbol: _nc_putchar
 ```
-* Solution: Do not source the license of other EDA tools.
+* Solution: Do not source the license of other EDA tools.  
 Since I sourced the license file of Verdi first, the corresponding verdi lib path is in LD_LIBRARY_PATH. This can be seen by ldd command:
 
 1. With Verdi license sourced:
